@@ -4,7 +4,7 @@
 class Coords : public Module {
 public:
 	Coords(Client* c, Category* o) : Module(c, o, "Coords") {
-		this->isEnabled = true;
+		//this->isEnabled = true;
 	};
 	void onGmTick(GameMode*);
 	void onRender(Renderer*);
