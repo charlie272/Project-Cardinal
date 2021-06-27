@@ -27,6 +27,7 @@ Client::Client(std::string name) {
 #include "Modules/Module/Killaura.h"
 #include "Modules/Module/Hitbox.h"
 #include "Modules/Module/BoostHit.h"
+#include "Modules/Module/EntityAura.h"
 /* Movement */
 #include "Modules/Module/AirJump.h"
 #include "Modules/Module/Step.h"
@@ -103,6 +104,7 @@ void Client::init() {
 	new Killaura(this, combat);
 	new Hitbox(this, combat);
 	new BoostHit(this, combat);
+	new EntityAura(this, combat);
 	/* Movement */
 	new AirJump(this, movement);
 	new Step(this, movement);
